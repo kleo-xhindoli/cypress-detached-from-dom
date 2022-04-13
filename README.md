@@ -1,4 +1,4 @@
-Minimal reproducable example of Cypress Detached from dom issue.
+Minimal reproducible example of Cypress Detached from dom issue.
 
 ## Getting Started
 
