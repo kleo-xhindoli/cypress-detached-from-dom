@@ -27,8 +27,12 @@ const Home: NextPage = () => {
   }, [query, refetch]);
 
   useEffect(() => {
-    // refetch results every 500ms
+    // emulate re-renders from other parts of the application
     const t = setInterval(() => setRefetch((prev) => !prev), 500);
+
+    return () => {
+      clearInterval(t);
+    };
   }, []);
 
   return (
